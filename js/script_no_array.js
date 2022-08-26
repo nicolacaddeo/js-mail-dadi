@@ -1,16 +1,17 @@
 // versione senza array
 
 // variabili
-let pcDicePoints = Math.floor(Math.random() * 6) + 1;
-let userDicePoints = Math.floor(Math.random() * 6) + 1;
 let userFeedback = 'yes';
-
-// visualizzazione risultati
-console.log(`Il computer ha fatto ${pcDicePoints}`);
-console.log(`Il giocatore ha fatto ${userDicePoints}`);
 
 // ciclo
 while (userFeedback == 'yes') {
+    let pcDicePoints = Math.floor(Math.random() * 6) + 1;
+    let userDicePoints = Math.floor(Math.random() * 6) + 1;
+
+    // visualizzazione risultati
+    console.log(`Il computer ha fatto ${pcDicePoints}`);
+    console.log(`Il giocatore ha fatto ${userDicePoints}`);
+
     if (pcDicePoints > userDicePoints) {
         console.log('Il computer vince!');
     } else if (pcDicePoints == userDicePoints) {
@@ -23,6 +24,9 @@ while (userFeedback == 'yes') {
         console.log('gioco terminato');
     }
 }
+
+
+
 
 
 
